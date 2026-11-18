@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Discord Embed Editor</title>
+    <meta
+      name="description"
+      content="Build Discord embeds visually. Drag and drop blocks, edit in place, then copy the JSON, an LLM prompt, discord.js or discord.py code."
+    />
+    <meta name="theme-color" content="#111214" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Discord Embed Editor" />
+    <meta
+      property="og:description"
+      content="A visual editor for Discord embeds with drag and drop and one-click exports."
+    />
+    <meta property="og:url" content="https://02sila.github.io/discord-embed-editor/" />
+    <meta property="og:image" content="https://02sila.github.io/discord-embed-editor/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://02sila.github.io/discord-embed-editor/og.png" />
+    <link rel="canonical" href="https://02sila.github.io/discord-embed-editor/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <script>
+      try {
+        var t = localStorage.getItem('embed-editor:theme')
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        document.documentElement.dataset.theme = t
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

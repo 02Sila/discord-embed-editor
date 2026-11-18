@@ -1,0 +1,119 @@
+/*
+  Palette: Discord's own graphite neutrals for the chrome, so the preview sits in a familiar room.
+  One accent, Discord's link blue. Type: Schibsted Grotesk for the tool (compact, clear figures),
+  Noto Sans inside the preview because it is in Discord's own fallback stack.
+*/
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+
+  --font-ui: 'Schibsted Grotesk', system-ui, sans-serif;
+  --font-discord: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-code: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 400ms;
+  --dur-slower: 600ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --topbar-h: 56px;
+  --tabbar-h: 64px;
+}
+
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #111214;
+  --panel: #1a1b1e;
+  --panel-2: #222327;
+  --panel-3: #2b2d31;
+  --line: #2f3136;
+  --line-strong: #43464d;
+  --text: #f2f3f5;
+  --muted: #a6a9b0;
+  --faint: #7d8189;
+  --accent: #00a8fc;
+  --accent-hover: #36baff;
+  --accent-ink: #00131f;
+  --accent-soft: rgb(0 168 252 / 0.14);
+  --danger: #f2575a;
+  --danger-soft: rgb(242 87 90 / 0.14);
+  --warn: #f0b232;
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 12px rgb(0 0 0 / 0.25);
+  --shadow-2: 0 8px 24px rgb(0 0 0 / 0.45), 0 2px 6px rgb(0 0 0 / 0.3);
+  --stage-top: #1b1c20;
+  --stage-bottom: #0d0e10;
+
+  --dc-chat: #313338;
+  --dc-embed: #2b2d31;
+  --dc-text: #dbdee1;
+  --dc-header: #f2f3f5;
+  --dc-muted: #949ba4;
+  --dc-link: #00a8fc;
+  --dc-code-bg: #1e1f22;
+  --dc-code-line: #232428;
+  --dc-mention: rgb(88 101 242 / 0.3);
+  --dc-mention-text: #c9cdfb;
+  --dc-spoiler: #1e1f22;
+  --dc-quote: #4e5058;
+  --dc-default-bar: #1e1f22;
+  --dc-tag: #5865f2;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #e9ebee;
+  --panel: #ffffff;
+  --panel-2: #f4f5f7;
+  --panel-3: #ebedf0;
+  --line: #dfe1e5;
+  --line-strong: #c4c8ce;
+  --text: #17181b;
+  --muted: #555960;
+  --faint: #73777f;
+  --accent: #006be0;
+  --accent-hover: #0059bd;
+  --accent-ink: #ffffff;
+  --accent-soft: rgb(0 107 224 / 0.1);
+  --danger: #c72c30;
+  --danger-soft: rgb(199 44 48 / 0.1);
+  --warn: #a8670a;
+  --shadow-1: 0 1px 2px rgb(20 22 28 / 0.08), 0 4px 12px rgb(20 22 28 / 0.06);
+  --shadow-2: 0 10px 28px rgb(20 22 28 / 0.14), 0 2px 6px rgb(20 22 28 / 0.08);
+  --stage-top: #f2f3f5;
+  --stage-bottom: #d9dce1;
+
+  --dc-chat: #ffffff;
+  --dc-embed: #f2f3f5;
+  --dc-text: #313338;
+  --dc-header: #060607;
+  --dc-muted: #5c5e66;
+  --dc-link: #006ce7;
+  --dc-code-bg: #f2f3f5;
+  --dc-code-line: #e3e5e8;
+  --dc-mention: rgb(88 101 242 / 0.15);
+  --dc-mention-text: #505cdc;
+  --dc-spoiler: #b8bbc1;
+  --dc-quote: #c4c9ce;
+  --dc-default-bar: #e3e5e8;
+  --dc-tag: #5865f2;
+}
